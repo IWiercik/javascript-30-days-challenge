@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000621;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.blue_arrow,.red_arrow,.white_arrow{
+    transform-origin: 200px 200px;
+}
+h1{
+    color: white;
+    font-family: 'Gluten', cursive;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 35px;
+    background: linear-gradient(to top ,#0d25ff,#fe1c0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 0px 98px rgba(255, 255, 255, 1);
+}
