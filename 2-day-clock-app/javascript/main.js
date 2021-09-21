@@ -28,7 +28,7 @@ function clockHandAnimation() {
     const hours = currentDate.getHours();
     redArrow.style.transform = `rotate(${seconds*6}deg)`;
     blueArrow.style.transform = `rotate(${minutes*6}deg)`;
-    whiteArrow.style.transform = `rotate(${hours*6}deg)`;
+    whiteArrow.style.transform = `rotate(${hours*15}deg)`;
 }
 setClockPosition();
 clockHandAnimation();
