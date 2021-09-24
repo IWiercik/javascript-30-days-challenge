@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background: rgb(255,217,25);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+}
+.center-content{
+    justify-self: center;
+    width: 250px;
+    margin-top: 50px;
+}
+.input-box{
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.582);
+    display: grid;
+    border-radius: 2px;
+    border: none;
+}
+.input-box input{
+    width: 90%;
+    height: 75%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 2px;
+    border: none;
+    padding: 0px 5px 0px 5px; 
+    box-shadow: 1px 1px 2px 0px rgba(94, 88, 88, 0.75);
+}
+input::placeholder{
+    color:gray;
+    text-align: center;
+}
+.information-box{
+    width: 80%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+    display: grid;
+    align-content: center;
+    font-size: 12px;
+    margin-top: -3px;
+}
+.information-box:nth-child(even){
+ transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+}
+.information-box:nth-child(odd){
+    transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    border-bottom: 1px solid gray;
+    margin-bottom:3px;
+}
+
+.information-box p{
+    padding: 10px;
+}
+span{
+    background: yellow;
+    display: inline;
+}
