@@ -32,7 +32,7 @@ input.addEventListener("input", (e) => {
       const regExpState = state.replace(regExp,`<span>${e.target.value}</span>`);
       const newDiv = document.createElement("div");
       newDiv.classList.add("information-box");
-      newDiv.innerHTML = `<div>${regExpCity}, ${regExpState}</div> ${regExpNumber}`;
+      newDiv.innerHTML = `<div>${regExpCity}, ${regExpState}</div> ${element.population}`;
       filteredElementsBox.appendChild(newDiv);
     });
   } else {
