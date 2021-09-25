@@ -20,15 +20,15 @@ body{
 }
 .center-content{
     justify-self: center;
-    width: 250px;
+    width: 640px;
     margin-top: 50px;
 }
 .input-box{
     width: 100%;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.582);
+    height: 160px;
+    background: #F7F7F7;;
     display: grid;
-    border-radius: 2px;
+    border-radius: 5px;
     border: none;
 }
 .input-box input{
@@ -40,35 +40,51 @@ body{
     border: none;
     padding: 0px 5px 0px 5px; 
     box-shadow: 1px 1px 2px 0px rgba(94, 88, 88, 0.75);
+    text-transform: capitalize;
+    font-size: 40px;
+    outline: none;
 }
 input::placeholder{
     color:gray;
     text-align: center;
 }
+
 .information-box{
     width: 80%;
-    height: 30px;
+    /* height: 50px; */
     margin-left: auto;
     margin-right: auto;
     background: white;
-    display: grid;
-    align-content: center;
-    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
     margin-top: -3px;
+    text-transform: capitalize;
+    box-shadow: 0 0 10px rgb(0 0 0 / 14%);
 }
 .information-box:nth-child(even){
- transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+ transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1);
+ border-bottom: 1px solid gray;
+ margin-bottom:3px;
 }
 .information-box:nth-child(odd){
     transform: perspective(100px) rotateX(-3deg) translateY(3px);
+    margin-bottom:4px;
     border-bottom: 1px solid gray;
-    margin-bottom:3px;
 }
-
 .information-box p{
-    padding: 10px;
+    display: inline;
+}
+.information-box div{
+    padding-left: 10px;
 }
 span{
-    background: yellow;
+    background: rgb(255,217,25) ;
     display: inline;
+    /* text-transform:lowercase */
+}
+.population{
+    padding-right: 10px;
 }
