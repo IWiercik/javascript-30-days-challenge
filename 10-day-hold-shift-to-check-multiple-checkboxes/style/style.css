@@ -1,0 +1,55 @@
+ *,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../images/background.JPG');
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: rgb(255,217,25);
+    color: black;
+    font-family: 'Schoolbell', cursive;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.centerContainer{
+    align-self: center;
+    justify-self: center;
+    width: 400px;
+    height: 600px;
+    background: white;
+    box-shadow: 14px 14px 2px 0px rgba(0,0,0,0.75);
+    display: grid;
+}
+.inputContainer{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.inputBox {
+    border-right: 1px solid lightblue;
+    border-bottom: 1px solid lightblue;
+    display: grid;
+}
+.textBox{
+    border-bottom: 1px solid lightblue;
+    display: grid;
+}
+p, input{
+    align-self: center;
+    
+}
+p{
+    margin-left: 5%;
+    font-size:24px
+}
+input{
+    justify-self: center;
+}
