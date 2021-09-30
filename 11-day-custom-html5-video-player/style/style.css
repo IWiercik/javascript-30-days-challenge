@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../images/background.JPG');
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.container{
+    max-width: 1000px;
+    position: relative;
+    font-size: 0;
+    overflow: hidden;
+   
+}
+video{
+    width: 850px;
+    /* position: absolute; */
+    /* background-size: cover; */
+    padding:0px;
+    z-index: 1;
+}
+.container:hover .control-panel{
+    transform: translateY(0px);
+}
+.container:hover .progress-bar{
+    bottom: 6%;
+    height: 15px;
+}
+
+.control-panel{
+    width: 100%;
+    bottom: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.progress-bar{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    background-color: yellow;
+    transition: 0.5s all;
+}
+.control-panel > *{
+    cursor: pointer;
+}
+button{
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+}
+input{
+    width: 40%;
+}
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    color: white;
+    background: white;
+
+}
