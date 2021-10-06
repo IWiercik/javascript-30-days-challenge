@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    background: rgb(255,217,25);
+}
+.container{
+    height: 100%;
+    max-width: 100%;
+    display: grid;
+}
+.center-container{
+    max-width: 500px;
+    justify-self: center;
+    margin-top: 5%;
+    background: white;
+    padding-bottom: 20px;
+}
+h1,p{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+}
+img{
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    transition: 1.5s all;
+    opacity: 0;
+   
+}
+.align-left{
+    float: left;
+    padding-right: 10px;
+    transform: translateX(-200%);
+}
+.align-right{
+    float: right;
+    padding-left: 10px;
+    transform: translateX(200%);
+
+}
