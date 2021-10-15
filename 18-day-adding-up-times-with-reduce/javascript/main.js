@@ -4,10 +4,8 @@ const minutes = [];
 const seconds = [];
 dataset.forEach((element) => {
   const mark = element.indexOf(":");
-  minutes.push(Number(element.substring(0, 2).replace(":", "")));
-  seconds.push(
-    Number(element.substring(element.indexOf(":") + 1, element.length))
-  );
+  minutes.push(Number(element.substring(0, mark)));
+  seconds.push(Number(element.substring(mark + 1, element.length)));
 });
 
 function summarizingItems(element) {
@@ -15,15 +13,13 @@ function summarizingItems(element) {
     return prev + current;
   });
 }
-
-const summarizedMinutes = summarizingItems(minutes);
-const summarizedSeconds = summarizingItems(seconds) / 60; //converted to minutes
-const hours = Math.floor(
-  Math.round(summarizedMinutes + summarizedSeconds) / 60
-);
+const summarizedSec = summarizingItems(seconds) / 60; //converted to minutes
+const summarizedMin = summarizingItems(minutes);
+const hours = Math.floor(Math.round(summarizedMin + summarizedSec) / 60);
 const minutesInHour = Math.round(
-  (Math.round(summarizedMinutes + summarizedSeconds) / 60 - hours) * 60
+  (Math.round(summarizedMin + summarizedSec) / 60 - hours) * 60
 );
-
-const totalTime = `${hours}:${minutesInHour < 10 ? `0${minutesInHour}`: minutesInHour }`;
+const totalTime = `${hours}:${
+  minutesInHour < 10 ? `0${minutesInHour}` : minutesInHour
+}`;
 console.log("TOTAL TIME:", totalTime);
