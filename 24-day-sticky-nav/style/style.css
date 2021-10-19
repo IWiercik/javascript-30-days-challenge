@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    bottom: 25%;
+    z-index: 1;
+    transition: all 2s;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    list-style-type: none;
+    background: rgba(2, 2, 2, 0.664);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+li{
+    padding: 20px;
+}
+.logo{
+    transform: translateX(-40vw);
+    /* display: none; */
+    height: 100%;
+    transition: 3s all;
+    background: white;
+    color: black;
+}
+
+.container0{
+    background: url('../images/pexels-nejc-košir-338936.jpg');
+}
+.container1{
+    background: url('../images/pexels-brandon-montrone-1179229.jpg');
+}
+.container2{
+    background: url('../images/pexels-quang-nguyen-vinh-2132180.jpg');
+}
